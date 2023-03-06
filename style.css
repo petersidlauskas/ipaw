@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+.menu-bar {
+    background: rgb(86,195,186);
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.menu-bar ul li {
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+.active, .menu-bar ul li:hover {
+    background: #89cdc8;
+    border-radius: 3px;
+}
+
+.menu-bar .fa {
+    margin-right: 8px;
+}
+
+.sub-menu-1 {
+    display: none;
+    
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgb(158,196,72);
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #FFFFFF;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: #b9ee40;
+}
+
+.menu-bar img {
+    height: 50px;
+    margin: 10px;
+    position: absolute;
+    left: 0;
+}
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+#slideImg {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+}
+
+.content {
+    width: 60%;
+    margin: 160px auto 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.content h1{
+    font-size: 60px;
+}
+
+.content h3{
+    width: 80%;
+    margin: 20px auto 100px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fe7250;
+    background: #fe7250;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+}
+
+section {
+    background-color: rgb(86,195,186);
+    color: #FFFFFF;
+   
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.headshot {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin-left: 80px;
+    position: relative;
+    right: 80px;
+}
+
+.headshot-container {
+    display: inline;
+    align-items: center;
+    position: relative;
+    left: 30px;
+    
+    
+}
+
+.information {
+    position: relative;
+    top: 50px;
+}
+
+
+
+.project-card {
+    width: 300px;
+    height: 400px;
+    background-color: #89cdc8;
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #ee6f2e;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 300;
+    
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.subtext {
+    font-size: 20px;
+    font-family:'Georgia';
+    margin: 10px;
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 175px;
+    height: 175px;
+    border-radius: 125px;
+}
+
+.story {
+    font-size: 15px;
+}
+
+#about-me {
+    background-color: rgb(158,196,72);
+}
+
+.container {
+    width: 100vw;
+    min-height: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #89cdc8;
+  }
+  
+
+  .container h2 {
+    font-family: "Poppins";
+    max-width: 40ch;
+    text-align: center;
+    color: white;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(8) {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(9) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(10) {
+    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(11) {
+    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(12) {
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(13) {
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(14) {
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(15) {
+    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(16) {
+    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(17) {
+    animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(18) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
